@@ -8,8 +8,8 @@ exports = module.exports = function(req, res) {
 		view.on('init', function(next){
 			var q = keystone.list('Product').model.find();
 			q.exec(function(err,res){
-				console.log('data', res);
 				locals.data = res;
+				console.log('data',res);
 				next();
 			});
 		});

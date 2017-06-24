@@ -1,3 +1,4 @@
+
 <main class="page-main">
   <div class="block">
     <div class="container">
@@ -20,10 +21,11 @@
       </ul>
     </div>
   </div>
+
   <div class="block product-block">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-4">
+        <div class="col-sm-6 col-md-6 col-lg-6">
           <!-- Product Gallery -->
           <div class="main-image">
             <img src="images/products/large/product-gallery-1.jpg" class="zoom" alt="" data-zoom-image="images/products/large/product-gallery-1.jpg" />
@@ -33,18 +35,20 @@
           </div>
           <div class="product-previews-wrapper">
             <div class="product-previews-carousel" id="previewsGallery">
-              <a href="#" data-image="images/products/large/product-gallery-1.jpg" data-zoom-image="images/products/large/product-gallery-1.jpg"><img src="images/products/product-gallery-1.jpg" alt="" /></a>
-              <a href="#" data-image="images/products/large/product-gallery-2.jpg" data-zoom-image="images/products/large/product-gallery-2.jpg"><img src="images/products/product-gallery-2.jpg" alt="" /></a>
-              <a href="#" data-image="images/products/large/product-gallery-3.jpg" data-zoom-image="images/products/large/product-gallery-3.jpg"><img src="images/products/product-gallery-3.jpg" alt="" /></a>
+              <a href="#" data-image="/images/products/large/product-gallery-1.jpg" data-zoom-image="/images/products/large/product-gallery-1.jpg"><img src="/images/products/product-gallery-1.jpg" alt="" /></a>
+              <a href="#" data-image="/images/products/large/product-gallery-2.jpg" data-zoom-image="/images/products/large/product-gallery-2.jpg"><img src="/images/products/product-gallery-2.jpg" alt="" /></a>
+              <a href="#" data-image="/images/products/large/product-gallery-3.jpg" data-zoom-image="/images/products/large/product-gallery-3.jpg"><img src="/images/products/product-gallery-3.jpg" alt="" /></a>
 
             </div>
           </div>
           <!-- /Product Gallery -->
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-5">
+
+        <div class="col-sm-6 col-md-6 col-lg-6">
           <div class="product-info-block classic">
+            {{#each data}}
             <div class="product-info-top">
-              <div class="product-sku">SKU: <span>Stock Keeping Unit</span></div>
+              <div class="product-sku">SKU: <span>{{title}}</span></span></div>
               <div class="rating">
                 <i class="icon icon-star fill"></i><i class="icon icon-star fill"></i><i class="icon icon-star fill"></i><i class="icon icon-star fill"></i><i class="icon icon-star"></i><span class="count">248 reviews</span>
               </div>
@@ -161,9 +165,11 @@
                 </div>
               </div>
             </div>
+            {{/each}}
           </div>
         </div>
-        <div class="col-md-12 col-lg-3 hidden-quickview">
+
+        {{!--<div class="col-md-12 col-lg-3 hidden-quickview">
           <div class="box-icon-row">
             <div class="box-left-icon-bg">
               <div class="box-icon"><i class="icon icon-gift"></i></div>
@@ -187,10 +193,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>--}}
       </div>
     </div>
   </div>
+
   <div class="block">
     <div class="tabaccordion">
       <div class="container">
@@ -440,7 +447,8 @@
       </div>
     </div>
   </div>
-  <div class="block">
+
+  {{!--<div class="block">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -735,12 +743,11 @@
                 </div>
               </div>
               <!-- /Product Item -->
-
             </div>
           </div>
           <!-- /Deal Carousel -->
         </div>
       </div>
     </div>
-  </div>
+  </div>--}}
 </main>
