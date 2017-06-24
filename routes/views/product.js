@@ -7,5 +7,5 @@ exports = module.exports = function(req, res) {
 
 
 
-  view.render('product-list');
+  view.render('product');
 };
